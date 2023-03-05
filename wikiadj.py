@@ -169,6 +169,7 @@ def ranker(adjacency_list):
 
 if __name__ == '__main__':
     st.title("Web of Wiki")
+    st.write("This is a wikipedia links crawler, goto any wikipedia article u wish and copy the last part of url to see what links are interconnected with it the most ")
     #c1,c2 = st.columns(2)
     #save_state = c1.checkbox(label="save states?(recomended for huge crawling)",value=True)
     #fresh_run = c2.checkbox(label="fresh run?(deleted saved state for the input)")
