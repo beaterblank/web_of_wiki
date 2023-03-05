@@ -5,7 +5,6 @@ import requests
 from bs4 import BeautifulSoup
 from urllib.parse import quote, unquote
 import time
-from tqdm import tqdm
 import json
 import streamlit as st
 import networkx as nx
