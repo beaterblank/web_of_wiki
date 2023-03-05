@@ -178,8 +178,7 @@ if __name__ == '__main__':
             #MainMenu {visibility: hidden;}
             footer {visibility: hidden;}
             header {visibility: hidden;}
-            .appview-container .main .block-container{{
-        padding-bottom: 0px;    }}
+            .appview-container .main .block-container{{padding-bottom: 0px;padding-top: 10px;    }}
             </style>
             """
     st.markdown(hide_st_style, unsafe_allow_html=True)
@@ -201,7 +200,7 @@ if __name__ == '__main__':
             with open(f"{start}/adj.json", "w", encoding="utf-8") as f:
                 json.dump(adjacency_list, f, ensure_ascii=False)
         fig,node_count = ranker(adjacency_list=adjacency_list)
-        st.plotly_chart(fig)
+        st.plotly_chart(fig,use_container_width=True)
         
         if save_state:
             with open(f"{start}/ranks.json", "w", encoding="utf-8") as f:
